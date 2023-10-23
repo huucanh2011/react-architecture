@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "preview": "vite preview",
-		"postinstall": "husky install"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",

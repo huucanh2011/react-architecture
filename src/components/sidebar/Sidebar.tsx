@@ -1,8 +1,17 @@
 import { SidebarToggle } from './SidebarToggle';
+import { useGlobalStore } from '@/store/useGlobalStore';
+import { cn } from '@/lib/utils';
 
 export const Sidebar = () => {
+  const { isMenuOpen } = useGlobalStore();
+
   return (
-    <aside className="space-y-4 flex flex-col items-center h-full text-white bg-zinc-800 w-full py-3 z-90">
+    <aside
+      className={cn(
+        'flex flex-col items-center z-50 space-y-4 h-full text-white bg-zinc-800 w-60 py-3 z-90',
+        isMenuOpen && 'w-20',
+      )}
+    >
       <SidebarToggle />
     </aside>
   );

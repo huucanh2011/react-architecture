@@ -1,0 +1,26 @@
+{
+  "app": {},
+  "menu": {
+    "dashboard": "Dashboard"
+  },
+  "title": {},
+  "btn": {
+    "cancel": "Cancel",
+    "continue": "Continue"
+  },
+  "msg": {},
+  "auth": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "lang": {
+    "placeholder": "Select language",
+    "english": "English",
+    "vietnamese": "Vietnamese"
+  },
+  "confirm_modal": {
+    "title": "Are you sure?",
+    "description": "This action cannot be undone."
+  }
+}

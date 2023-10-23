@@ -1,0 +1,26 @@
+{
+  "app": {},
+  "menu": {
+    "dashboard": "Tổng quan"
+  },
+  "title": {},
+  "btn": {
+    "cancel": "Huỷ",
+    "continue": "Tiếp tục"
+  },
+  "msg": {},
+  "auth": {
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất"
+  },
+  "lang": {
+    "placeholder": "Chọn ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt"
+  },
+  "confirm_modal": {
+    "title": "Bạn có chắc chắn?",
+    "description": "Hành động này không thể hoàn tác."
+  }
+}

@@ -1,9 +1,9 @@
 import * as z from 'zod';
 
-export const SignInFormSchema = z.object({
-  username: z
+export const LoginFormSchema = z.object({
+  email: z
     .string()
-    .min(2, { message: 'Username must have at least 2 characters' })
+    .min(2, { message: 'Email must have at least 2 characters' })
     .max(20, { message: 'Too many characters' }),
   password: z
     .string()
@@ -12,4 +12,13 @@ export const SignInFormSchema = z.object({
   rememberMe: z.boolean().default(true).optional(),
 });
 
-export type SignInFormSchemaType = z.infer<typeof SignInFormSchema>;
+export type LoginFormSchemaType = z.infer<typeof LoginFormSchema>;
+
+export const ForgotPasswordFormSchema = z.object({
+  email: z
+    .string()
+    .min(2, { message: 'Email must have at least 2 characters' })
+    .max(20, { message: 'Too many characters' }),
+});
+
+export type ForgotPasswordSchemaType = z.infer<typeof ForgotPasswordFormSchema>;

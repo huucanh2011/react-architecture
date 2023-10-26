@@ -10,10 +10,11 @@ import QueryProvider from './components/providers/QueryProvider';
 import ProgressBar from './components/ProgressBar';
 import ErrorFallbackRenderer from './components/ErrorFallbackRenderer';
 import { ThemeProvider } from './components/providers/ThemeProvider';
+import { constants } from './config/constants';
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey={constants.themeKey}>
       <QueryProvider>
         <ErrorBoundary fallbackRender={ErrorFallbackRenderer}>
           <Suspense fallback={<ProgressBar />}>

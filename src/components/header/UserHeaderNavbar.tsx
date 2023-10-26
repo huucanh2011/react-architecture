@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/button';
 import { UserAvatar } from '@/components/UserAvatar';
 import { useAuthStore } from '@/store/useAuthStore';
 
-export const UserNavbar = () => {
+export const UserHeaderNavbar = () => {
   const { t } = useTranslation();
   const { setIsAuthenticated } = useAuthStore();
 

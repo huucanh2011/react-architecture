@@ -3,7 +3,12 @@
   "menu": {
     "dashboard": "Tổng quan"
   },
-  "title": {},
+  "title": {
+    "login": "Đăng nhập",
+    "forgot_password": "Quên mật khẩu",
+    "reset_password": "Đặt lại mật khẩu",
+    "dashboard": "Tổng quan"
+  },
   "btn": {
     "cancel": "Huỷ",
     "continue": "Tiếp tục"

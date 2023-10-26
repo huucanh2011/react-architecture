@@ -1,14 +1,15 @@
 import { lazy } from 'react';
 import { RouteObject, useRoutes } from 'react-router';
 
-import MainLayout from '@/components/layout/MainLayout';
-import AuthLayout from '@/components/layout/AuthLayout';
 import WrapperRouteComponent from './config';
 import { routerPath } from './routerPath';
+import { AuthLayout, MainLayout } from '@/components/layouts';
 
-const SignInPage = lazy(() => import('@/pages/Auth/SignIn'));
+const LoginPage = lazy(() => import('@/pages/Auth/Login'));
 const ForgotPasswordPage = lazy(() => import('@/pages/Auth/ForgotPassword'));
+const ResetPasswordPage = lazy(() => import('@/pages/Auth/ResetPassword'));
 const DashboardPage = lazy(() => import('@/pages/Dashboard'));
+const UserListPage = lazy(() => import('@/pages/User'));
 const NotfoundPage = lazy(() => import('@/pages/404'));
 
 const lazyRoutes: RouteObject[] = [
@@ -24,16 +25,24 @@ const lazyRoutes: RouteObject[] = [
           </WrapperRouteComponent>
         ),
       },
+      {
+        path: routerPath.users,
+        element: (
+          <WrapperRouteComponent>
+            <UserListPage />
+          </WrapperRouteComponent>
+        ),
+      },
     ],
   },
   {
     element: <AuthLayout />,
     children: [
       {
-        path: routerPath.signIn,
+        path: routerPath.login,
         element: (
           <WrapperRouteComponent auth>
-            <SignInPage />
+            <LoginPage />
           </WrapperRouteComponent>
         ),
       },
@@ -42,6 +51,14 @@ const lazyRoutes: RouteObject[] = [
         element: (
           <WrapperRouteComponent auth>
             <ForgotPasswordPage />
+          </WrapperRouteComponent>
+        ),
+      },
+      {
+        path: routerPath.resetPassword,
+        element: (
+          <WrapperRouteComponent auth>
+            <ResetPasswordPage />
           </WrapperRouteComponent>
         ),
       },

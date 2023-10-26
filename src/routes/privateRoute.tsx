@@ -7,11 +7,7 @@ import { routerPath } from './routerPath';
 const PrivateRoute = ({ children }: PropsWithChildren) => {
   const { isAuthenticated } = useAuthStore((state) => state);
 
-  return isAuthenticated ? (
-    <>{children}</>
-  ) : (
-    <Navigate to={routerPath.signIn} />
-  );
+  return isAuthenticated ? <>{children}</> : <Navigate to={routerPath.login} />;
 };
 
 export default PrivateRoute;

@@ -2,7 +2,7 @@ import { SidebarToggle } from './SidebarToggle';
 import { useGlobalStore } from '@/store/useGlobalStore';
 import { cn } from '@/lib/utils';
 
-export const Sidebar = () => {
+export const NavigationSidebar = () => {
   const { isMenuOpen } = useGlobalStore();
 
   return (

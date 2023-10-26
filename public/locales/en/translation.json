@@ -3,16 +3,26 @@
   "menu": {
     "dashboard": "Dashboard"
   },
-  "title": {},
+  "title": {
+    "login": "Login",
+    "forgot_password": "Forgot password",
+    "reset_password": "Reset password",
+    "dashboard": "Dashboard"
+  },
   "btn": {
     "cancel": "Cancel",
-    "continue": "Continue"
+    "continue": "Continue",
+    "return_to_sign_in": "Return to sign in"
+  },
+  "field": {
+    "email": "Email"
   },
   "msg": {},
   "auth": {
     "profile": "Profile",
     "settings": "Settings",
-    "logout": "Log out"
+    "logout": "Log out",
+    "forgot_password": "Forgot password"
   },
   "lang": {
     "placeholder": "Select language",

@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router';
 
-import { Sidebar } from '@/components/sidebar/Sidebar';
-import { Navbar } from '@/components/navbar/Navbar';
+import { HeaderNavbar } from '@/components/header/HeaderNavbar';
+import { NavigationSidebar } from '@/components/navigation/NavigationSidebar';
 
 const MainLayout = () => {
   return (
     <div className="h-full flex dark:bg-[#1F1F1F]">
-      <Sidebar />
-      <div className="flex flex-col h-full flex-1">
-        <Navbar />
+      <NavigationSidebar />
+      <div className="flex-1 flex flex-col h-full">
+        <HeaderNavbar />
         <main className="h-full p-[10px]">
           <Outlet />
         </main>

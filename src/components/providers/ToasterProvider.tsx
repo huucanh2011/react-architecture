@@ -1,11 +1,8 @@
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from 'sonner';
 
 const ToasterProvider = () => {
   return (
     <Toaster
-      position="top-right"
-      reverseOrder={false}
-      gutter={8}
       toastOptions={{
         duration: 5000,
       }}
